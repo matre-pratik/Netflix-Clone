@@ -199,8 +199,9 @@ nav .logo img{
 
 .about .heading {
     color: white;
-    margin: 10px 10px 10px 134px; 
+    margin: 20px; 
     width: 100%;  
+    text-align: left;
 }
 .about .content{
     display: flex;
