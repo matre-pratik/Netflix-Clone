@@ -1,0 +1,679 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Menbere:wght@100..700&family=Merienda:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Menbere","Poppins", sans-serif;
+}
+.container{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container .box{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    opacity: 0.8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    width: 75%;
+    height: 88px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    position: relative;
+    z-index: 1;
+}
+
+nav .logo img{
+    height: 40px;
+    width: auto;
+}
+
+.nav-item select{
+    margin: 0px 10px;
+    padding: 2px 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight:700 ;
+    border-radius: 6px;
+}
+
+.nav-item select option{
+    background-color: black;
+}
+.nav-item img{
+    height: 20px;
+    /* width: 40px; */
+}
+
+.nav-item button{
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight:700 ;
+}
+
+
+.box .box1{
+    width: 40vw;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.box .box1 h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+}
+.box .box1 span{
+    color: white;
+    font-size: 18px;
+}
+.box .box2{
+    width: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.box .box2 span{
+    margin-bottom: 15px;
+}
+
+.box .box2 input{
+    width: 350px;
+    padding: 17px;
+    margin: 5px 6px;
+    background-color: transparent;
+    border: 1px solid rgb(123 116 116);
+    border-radius: 10px;
+    font-size: 16px;
+}
+.box .box2 input::placeholder{
+    color: rgb(123 116 116);
+}
+
+.box .box2 button{
+    background-color: red;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 25px;
+    color: white;
+    font-weight:700 ;
+    position: relative;
+}
+.trending-section{
+    position: relative;
+    background: radial-gradient(90% 500% at 50% -450%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-size: cover;
+}
+.gradient{
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    border-top-left-radius: 100% 20px;
+    border-top-right-radius: 100% 25px;
+    margin: -2px 0px 20px;
+}
+.trends{
+    width: 80vw;
+    margin: auto;
+    background-color: #0000001f;;
+}
+.trends .heading h2{
+    color: white;
+    margin: 20px;    
+}
+
+.trend-list{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+}
+.trend-list::-webkit-scrollbar{
+    display: none;
+}
+.trend-list .cards{
+    position: relative;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 12px;
+    overflow: visible;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: block;
+}
+.cards span{
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    color: black;
+    text-shadow: -4px 2px 0 white;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 5px 10px;
+    z-index: 2;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: auto; */
+    align-items: center;
+    background-color: black;
+}
+
+.about .heading {
+    color: white;
+    margin: 10px 10px 10px 134px; 
+    width: 100%;  
+}
+.about .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.about .content .box{
+    margin: 15px;
+    background-color: rgb(38 31 63);
+    color: white;
+    width: 251px;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+}
+
+.about .content .box h2{
+   width: 100%;
+   padding: 10px;
+}
+
+.about .content .box p{
+    padding: 10px;
+
+}
+.about .content .box img{
+    width: 72px;
+    /* height: 72px; */
+    margin: 10px 0px 0px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.about .questions{
+    width: 80vw;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+.about .questions details{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: rgb(32, 31, 31);
+    overflow: hidden;
+}
+.about .questions details div p{
+    margin: 10px;
+}
+summary{
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+summary::marker{
+    display: none;
+}
+summary::after{
+    content: "+";
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+}
+details[open] summary::after{
+    content: "-";
+}
+
+.search{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.search .box3{
+    text-align: center;
+    margin: 30px 10px;
+}
+.search .box3 span{
+    display: inline-block;
+    width: 100%;
+    margin: 16px;
+}
+
+.search .box3 div{
+    height: auto;
+    width: 80vw;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .box3 input{
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    padding: 18px;
+    margin: 5px;
+    border: 1px solid rgb(123 116 116);
+    border-radius: 6px;
+}
+
+.search .box3 input::placeholder{
+    color: rgb(123 116 116);
+}
+
+.search .box3 button{
+    background-color: red;
+    padding: 14px 40px;
+    border-radius: 6px;
+    border: none;
+    font-size: 25px;
+    color: white;
+    font-weight:700 ;
+    position: relative;
+}
+footer{
+    background-color: black;
+}
+.foot{
+    width: 80vw;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.foot span, a{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.foot .foot-item{
+    width: 100%;
+}
+.foot-item ul{
+    margin: 20px 0px;
+}
+.foot-item ul li{
+    display: inline-block;
+    width: 24%;
+    padding: 20px 0px 0px;
+}
+.foot-item ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.foot .button{
+    width: 100%;
+}
+.foot .button select{
+    margin: 10px 0px;
+    padding: 5px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+
+.foot .p1{
+    width: 100%;
+    color: rgba(255,255,255,0.7);
+    margin: 30px 0px;
+    font-size: 14px;
+}
+.foot .p2{
+    width: 100%;
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+}
+.foot .p2 a{
+    color: blue;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  .container, .container .box {
+    height: 80vh;
+  }
+
+  nav {
+    width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav .logo img {
+    height: 24px;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-item select,
+  .nav-item button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .box .box1, .box .box2 {
+    width: 90vw;
+  }
+
+  .box .box1 h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .box .box1 span,
+  .box .box2 span {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .box .box2 input {
+    font-size: 12px;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .box .box2 button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .trend-list {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .cards {
+    width: 140px;
+    height: 180px;
+  }
+
+  .cards span {
+    font-size: 40px;
+    left: -10px;
+    bottom: -8px;
+  }
+
+  .about .heading h2 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .about .content .box {
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+  }
+
+  .about .content .box h2 {
+    font-size: 18px;
+  }
+
+  .about .content .box p {
+    font-size: 14px;
+  }
+
+  .about .content .box img {
+    width: 50px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .about .questions details {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  summary::after {
+    font-size: 18px;
+    right: 10px;
+  }
+
+  .search .box3 span {
+    font-size: 14px;
+  }
+
+  .search .box3 div {
+    flex-direction: column;
+  }
+
+  .search .box3 input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .search .box3 button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .foot {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .foot-item ul li {
+    width: 100%;
+  }
+
+  .foot-item ul li a {
+    font-size: 14px;
+  }
+
+  .foot .button select {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .foot .p1, .foot .p2 {
+    font-size: 13px;
+  }
+}
+
+
+/*  Tablet Devices  */
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  nav {
+    width: 90vw;
+  }
+
+  .box .box1 {
+    width: 70vw;
+  }
+
+  .box .box2 {
+    width: 80vw;
+  }
+
+  .box .box1 h1 {
+    font-size: 32px;
+  }
+
+  .box .box1 span,
+  .box .box2 span {
+    font-size: 16px;
+  }
+
+  .box .box2 input {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .box .box2 button {
+    font-size: 18px;
+  }
+
+  .cards {
+    width: 160px;
+    height: 200px;
+  }
+
+  .cards span {
+    font-size: 50px;
+  }
+
+  .about .heading h2 {
+    font-size: 26px;
+  }
+
+  .about .content .box h2 {
+    font-size: 20px;
+  }
+
+  .about .content .box p {
+    font-size: 15px;
+  }
+
+  .about .questions details {
+    font-size: 16px;
+  }
+
+  .search .box3 span {
+    font-size: 16px;
+  }
+
+  .search .box3 input {
+    font-size: 15px;
+  }
+
+  .search .box3 button {
+    font-size: 18px;
+  }
+
+  .foot-item ul li {
+    width: 48%;
+  }
+
+  .foot .p1,
+  .foot .p2 {
+    font-size: 14px;
+  }
+}
+
+
+/*  Desktop Devices (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .box .box1 h1 {
+    font-size: 48px;
+  }
+
+  .box .box1 span,
+  .box .box2 span {
+    font-size: 18px;
+  }
+
+  .box .box2 input {
+    font-size: 16px;
+  }
+
+  .box .box2 button {
+    font-size: 25px;
+  }
+
+  .about .heading h2,
+  .trends .heading h2 {
+    font-size: 30px;
+  }
+
+  .about .content .box h2 {
+    font-size: 22px;
+  }
+
+  .about .content .box p {
+    font-size: 16px;
+  }
+
+  .about .questions details {
+    font-size: 18px;
+  }
+
+  .search .box3 span {
+    font-size: 18px;
+  }
+
+  .search .box3 input {
+    font-size: 16px;
+  }
+
+  .search .box3 button {
+    font-size: 22px;
+  }
+
+  .foot-item ul li a {
+    font-size: 15px;
+  }
+
+  .foot .p1,
+  .foot .p2 {
+    font-size: 14px;
+  }
+}
